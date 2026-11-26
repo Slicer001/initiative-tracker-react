@@ -30,6 +30,7 @@
 
 .initiative-tracker table {
     width: 100%;
+    min-width: 512px;
     table-layout: fixed;
     border-collapse: collapse;
 }
