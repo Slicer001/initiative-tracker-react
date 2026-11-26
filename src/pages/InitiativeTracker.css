@@ -1,0 +1,73 @@
+.full-page {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.monster-finder,
+.initiative-tracker,
+.stat-block-display {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+}
+
+.monster-finder {
+    flex: 0;
+    background-color: #f4f4f9;
+}
+
+.initiative-tracker {
+    flex: 3;
+    background-color: #f4f4f9;
+}
+
+.stat-block-display {
+    flex: 1;
+    min-width: 370px;
+    background-color: #f4f4f9;
+}
+
+.initiative-tracker table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.initiative-tracker th {
+    text-align: center;
+    padding: 4px;
+}
+
+.initiative-tracker td {
+    text-align: center;
+    padding: 4px;
+}
+
+.initiative-tracker td input {
+    text-align: center;
+    width: 100%;
+    min-width: 0px;
+    box-sizing: border-box;
+    padding: 6px 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: inherit;
+}
+
+.button-wrapper {
+    text-align: center;
+}
+
+.button-wrapper input {
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #666666;
+    padding: 4px;
+    font-size: inherit;
+    margin: 0px 0px 16px;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none !important;
+}

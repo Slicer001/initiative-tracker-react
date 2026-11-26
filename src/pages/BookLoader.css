@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Stacks multiple items vertically; remove for side-by-side */
+    justify-content: center;
+    /* Centers vertically (or horizontally if row) */
+    align-items: center;
+    /* Centers horizontally (or vertically if row) */
+    text-align: center;
+    /* Ensures multi-line text inside children is also centered */
+    margin: 16px;
+}
