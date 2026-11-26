@@ -26,12 +26,17 @@ const InitiativeTracker = () => {
     }, [])
 
     const filteredSuggestions = (query) => {
-        return query.trim() === ''
-            ? []
-            : allCreatureNames
-                .filter((item) => item.toLowerCase().startsWith(query.toLowerCase()))
-                .sort()
-    }
+        const trimmedQuery = query.trim().toLowerCase();
+        if (trimmedQuery === '') {
+            return [];
+        }
+
+        const matches = allCreatureNames.filter((item) =>
+            item.toLowerCase().startsWith(trimmedQuery)
+        );
+
+        return [...new Set(matches)].sort();
+    };
 
     //import creature data
     const loadCreatureData = async (creatureName) => {
