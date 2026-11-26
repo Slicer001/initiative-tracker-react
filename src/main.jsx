@@ -12,7 +12,7 @@ createRoot(document.getElementById('root')).render(
 
       <Route path="/creature/:name" element={<StatBlockRenderer />} />
 
-      <Route path="/" element={<Navigate to="/initiative-tracker" replace />} />
+      <Route path="/" element={<InitiativeTracker />} />
       <Route path="/initiative-tracker" element={<InitiativeTracker />} />
     </Routes>
   </BrowserRouter>
